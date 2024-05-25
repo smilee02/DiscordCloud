@@ -1,0 +1,121 @@
+/* components/FileList.module.css */
+
+.fileListContainer {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  
+  .table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 10px;
+    text-align: left;
+    color: #f4f4f4;
+  }
+  
+  .table th {
+    color: #f4f4f4;
+  }
+  
+  .fileName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+  
+  .button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+  
+  .downloadBtn {
+    background: #007bff;
+    color: #fff; /* Add text color for buttons */
+  }
+  
+  .deleteBtn {
+    background: #dc3545;
+    color: #fff; /* Add text color for buttons */
+  }
+  
+  .toggleBtn {
+    display: block;
+    padding: 10px 20px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto; /* Center the toggle button */
+  }
+  
+  
+  /* Define fixed widths for table columns */
+  .columnName {
+    width: 30%;
+  }
+  
+  .columnExtension {
+    width: 20%;
+  }
+  
+  .columnSize {
+    width: 15%;
+  }
+  
+  .columnDownload,
+  .columnDelete {
+    width: 10%;
+  }
+  
+
+/* components/FileList.module.css */
+
+/* Original styles remain the same */
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .table {
+    width: 100%; /* Make the table full width on smaller screens */
+  }
+
+  .toggleBtn {
+    margin: 20px auto; /* Center the toggle button on smaller screens */
+  }
+}
+
+/* For even smaller screens, adjust styles further */
+@media screen and (max-width: 480px) {
+  .columnName,
+  .columnExtension,
+  .columnSize,
+  .columnDownload,
+  .columnDelete {
+    width: auto; /* Allow table columns to adjust based on content */
+  }
+
+  .fileName {
+    max-width: 60px; /* Adjust maximum width for file names */
+  }
+
+  .file-upload-wrapper {
+    max-width: none; /* Remove max-width for file upload wrapper */
+  }
+
+  .file-upload input[type='file'] {
+    padding: 5px; /* Adjust padding for file input */
+  }
+
+  .file-upload-btn {
+    padding: 8px 16px; /* Adjust padding for file upload button */
+  }
+}
